@@ -1,22 +1,28 @@
-.transactionTable {
-  width: 90%;
+.transactionHistory {
+  width: 80%;
   margin: 40px auto;
   border-collapse: collapse;
   font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.transactionTable th,
-.transactionTable td {
+.transactionHistory th,
+.transactionHistory td {
   border: 1px solid #333;
-  padding: 10px 15px;
+  padding: 12px 20px;
   text-align: center;
+  font-size: 16px;
 }
 
-.transactionTable th {
+.transactionHistory thead {
   background-color: #111;
   color: white;
 }
 
-.transactionTable tr:nth-child(even) {
-  background-color: #ddd;
+.transactionHistory tbody tr:nth-child(even) {
+  background-color: #d3d3d3;
+}
+
+.transactionHistory tbody tr:nth-child(odd) {
+  background-color: #fff;
 }
